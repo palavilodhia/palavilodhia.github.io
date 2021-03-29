@@ -1,0 +1,263 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #557a95;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 75px 150px;
+  position: relative;
+}
+.hero .profile {
+  width: 20%;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.hero .about {
+  width: 80%;
+  margin-left: 80px;
+  padding: 30px;
+  background-color: #425f75;
+  color: white;
+  border-radius: 20px;
+  border: 5px solid white;
+}
+.hero .about h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+@media (max-width: 610px) {
+  .hero .about h1 {
+    font-size: 36px;
+  }
+}
+.hero .about h5 {
+  font-size: 16px;
+  line-height: 1.25rem;
+}
+@media (max-width: 610px) {
+  .hero .about h5 {
+    font-size: 14px;
+  }
+}
+
+.experiences {
+  margin: 70px 150px;
+}
+.experiences h2 {
+  font-weight: 200;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+.experiences .experienceLeft {
+  position: relative;
+  margin: 50px 0;
+}
+.experiences .experienceLeft .imgLeft {
+  position: relative;
+  width: 30%;
+  border: 5px solid white;
+}
+.experiences .experienceLeft .imgLeft img {
+  width: 100%;
+}
+.experiences .experienceLeft .aboutRight {
+  position: absolute;
+  left: 27%;
+  width: 73%;
+  padding: 15px;
+  background-color: #b1a296;
+  border: 5px solid white;
+  color: black;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.experiences .experienceLeft .aboutRight h3.experienceTitle {
+  font-size: 28px;
+  font-weight: 400;
+  padding-bottom: 0.75rem;
+  line-height: 2rem;
+}
+.experiences .experienceLeft .aboutRight h5.experienceDescription {
+  line-height: 1.25rem;
+}
+.experiences .experienceRight {
+  position: relative;
+  margin: 50px 0;
+}
+.experiences .experienceRight .imgRight {
+  position: relative;
+  left: 70%;
+  width: 30%;
+  border: 5px solid white;
+}
+.experiences .experienceRight .imgRight img {
+  width: 100%;
+}
+.experiences .experienceRight .aboutLeft {
+  position: absolute;
+  width: 73%;
+  padding: 15px;
+  background-color: #b1a296;
+  border: 5px solid white;
+  color: black;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.experiences .experienceRight .aboutLeft h3.experienceTitle {
+  font-size: 28px;
+  font-weight: 400;
+  padding-bottom: 0.75rem;
+  line-height: 2rem;
+}
+.experiences .experienceRight .aboutLeft h5.experienceDescription {
+  line-height: 1.25rem;
+}
+
+.projects {
+  margin: 70px 100px;
+}
+.projects h2 {
+  font-weight: 200;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+.projects .project {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: space-between;
+  border-radius: 25px;
+  background-color: #1a3137;
+  padding: 25px;
+  margin: 40px 0;
+}
+.projects .project .project-left {
+  width: 50%;
+  padding: 0.5rem;
+}
+@media (max-width: 992px) {
+  .projects .project .project-left {
+    width: 100%;
+  }
+}
+@media (max-width: 610px) {
+  .projects .project .project-left {
+    padding-bottom: 0;
+  }
+}
+.projects .project .project-left h3 {
+  font-size: 28px;
+  font-weight: 200;
+  padding-bottom: 0.75rem;
+  line-height: 2rem;
+}
+@media (max-width: 610px) {
+  .projects .project .project-left h3 {
+    font-size: 20px;
+    padding-bottom: 0.25rem;
+  }
+}
+.projects .project .project-left a.link {
+  display: inline-block;
+  text-decoration: none;
+  color: #6dabbb;
+  font-size: 16px;
+  margin: 0 20px 1rem 0;
+}
+@media (max-width: 610px) {
+  .projects .project .project-left a.link {
+    font-size: 14px;
+    margin: 0 20px 0.75rem 0;
+  }
+}
+.projects .project .project-left a.link:active {
+  color: white;
+}
+.projects .project .project-left ul li {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  line-height: 1.25rem;
+}
+@media (max-width: 610px) {
+  .projects .project .project-left ul li {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+}
+.projects .project .project-left a.hyperlink {
+  display: inline-block;
+  text-decoration: none;
+  color: #6dabbb;
+}
+.projects .project .project-left .technologies {
+  margin-top: 1rem;
+}
+.projects .project .project-left button {
+  background-color: white;
+  color: #264952;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding: 2px 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+@media (max-width: 610px) {
+  .projects .project .project-left button {
+    font-size: 12px;
+  }
+}
+.projects .project .project-left button:active {
+  background-color: white;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+.projects .project .project-left button:focus {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+.projects .project .project-right {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  position: absolute;
+  left: 55%;
+}
+@media (max-width: 992px) {
+  .projects .project .project-right {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 610px) {
+  .projects .project .project-right {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+.projects .project .project-right img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */
