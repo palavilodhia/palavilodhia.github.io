@@ -80,7 +80,7 @@ body {
     padding: 30px;
     background-color: #425f75;
     color: white;
-    border-radius: 20px;
+    border-radius: 30px;
 
     border: 5px solid white;
 
@@ -108,8 +108,8 @@ body {
     h1 {
       font-size: 50px;
       margin-bottom: 20px;
-      font-weight: 300;
-      letter-spacing: 5px;
+      font-weight: 500;
+      letter-spacing: 2px;
 
       @include respond-phone {
         font-size: 36px;
@@ -204,7 +204,7 @@ body {
 
   h2 {
     font-weight: 200;
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 50px;
 
     // @include respond-phone {
@@ -215,12 +215,14 @@ body {
 
   .experienceLeft {
     position: relative;
-    margin: 50px 0;
+    // margin: 50px 0;
 
     .imgLeft {
       position: relative;
       width: 30%;
       border: 5px solid white;
+
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
       img {
         width: 100%;
@@ -233,9 +235,10 @@ body {
       width: 73%;
       padding: 15px;
 
-      background-color: #b1a296;
+      background-color: #bcafa5;
       border: 5px solid white;
       // border-radius: 20px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
       color: black;
 
@@ -260,7 +263,7 @@ body {
 
   .experienceRight {
     position: relative;
-    margin: 50px 0;
+    // margin: 50px 0;
 
     .imgRight {
       position: relative;
@@ -278,7 +281,7 @@ body {
       width: 73%;
       padding: 15px;
 
-      background-color: #b1a296;
+      background-color: #bcafa5;
       border: 5px solid white;
       // border-radius: 20px;
 

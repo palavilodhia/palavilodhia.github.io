@@ -20,7 +20,7 @@ t1.from('.hero .about h5', {
      duration: 1,
      x: '100%',
      opacity: 0,
-}, '0.5');
+}, '0');
 t1.from('.hero .about button', {
      duration: 1,
      y: '100%',
@@ -28,7 +28,7 @@ t1.from('.hero .about button', {
      stagger: 0.1
 }, '1');
 t1.from('.hero .profile', {
-     duration: 2,
+     duration: 1,
      // width: 0,
      x: '-100%',
      opacity: 0,
