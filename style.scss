@@ -52,26 +52,66 @@ body {
   // @include respond-phone {
   //   margin: 50px 20px;
   // }
-
-  .profile {
+  .left {
     width: 20%;
-    border-radius: 50%;
-    border: 2px solid white;
 
-    // @include respond-medium {
-    //   width: 30%;
-    //   margin-bottom: 70px;
-    // }
+    .profile {
+      width: 100%;
+      border-radius: 50%;
+      border: 2px solid white;
+  
+      // @include respond-medium {
+      //   width: 30%;
+      //   margin-bottom: 70px;
+      // }
+  
+      // @include respond-small {
+      //   width: 40%;
+      //   margin-bottom: 70px;
+      // }
+  
+      // @include respond-phone {
+      //   width: 70%;
+      //   margin-bottom: 70px;
+      // }
+    }
 
-    // @include respond-small {
-    //   width: 40%;
-    //   margin-bottom: 70px;
-    // }
+    .btnContainer {
+      // margin: 0 auto;
+      text-align: center;
+      margin-top: 20px;
 
-    // @include respond-phone {
-    //   width: 70%;
-    //   margin-bottom: 70px;
-    // }
+      button {
+        background-color: white;
+        color: #395264;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+        padding: 7px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+
+        @include respond-phone {
+          font-size: 12px;
+        }
+      }
+
+      button:active {
+        background-color: white;
+        text-decoration: none;
+        border: none;
+        outline: none;
+      }
+
+      button:focus {
+        text-decoration: none;
+        border: none;
+        outline: none;
+      }
+    }
   }
 
   .about {

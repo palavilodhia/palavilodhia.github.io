@@ -20,10 +20,46 @@ body {
   margin: 75px 150px;
   position: relative;
 }
-.hero .profile {
+.hero .left {
   width: 20%;
+}
+.hero .left .profile {
+  width: 100%;
   border-radius: 50%;
   border: 2px solid white;
+}
+.hero .left .btnContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+.hero .left .btnContainer button {
+  background-color: white;
+  color: #395264;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding: 7px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+@media (max-width: 610px) {
+  .hero .left .btnContainer button {
+    font-size: 12px;
+  }
+}
+.hero .left .btnContainer button:active {
+  background-color: white;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+.hero .left .btnContainer button:focus {
+  text-decoration: none;
+  border: none;
+  outline: none;
 }
 .hero .about {
   width: 80%;

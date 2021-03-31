@@ -22,12 +22,6 @@ t1.from('.hero .about h5', {
      x: '100%',
      opacity: 0,
 }, '0');
-t1.from('.hero .about button', {
-     duration: 1,
-     y: '100%',
-     opacity: 0,
-     stagger: 0.1
-}, '1');
 t1.from('.hero .profile', {
      duration: 1,
      // width: 0,
@@ -46,7 +40,8 @@ t1.from('.hero .profile', {
 //      ease: Power1.easeOut,
 // }, '0');
 
-// Experiences Title
+
+// Clinical Work
 gsap.from('.experiences h2', {
      duration: 1,
      x: '-100%',
@@ -57,7 +52,6 @@ gsap.from('.experiences h2', {
      },
 });
 
-// Experience Animations
 for (var i = 1; i<=numExperiences; i+=2) {
      var t2 = gsap.timeline({
           scrollTrigger: {
@@ -114,6 +108,8 @@ for (var i = 2; i<=numExperiences; i+=2) {
      }, '0');
 }
 
+// Lab Work
+
 // for (var i = 1; i<=numLabs; i++) {
 //      var t4 = gsap.timeline({
 //           scrollTrigger: {
@@ -163,14 +159,14 @@ t5.from('.lab .img', {
      stagger: 0.3
 }, '0');
 t5.from('.lab .about', {
-     duration: 1,
+     duration: 2,
      y: '100%',
      opacity: 0,
-     stagger: 0.3
+     stagger: 0.3,
 }, '0');
 
 
-
+// Volunteer Work
 let t6 = gsap.timeline({
      scrollTrigger: {
           trigger: '.volunteerSection',
@@ -191,49 +187,7 @@ t6.from('.vol .about', {
      stagger: 0.3
 }, '0');
 t6.from('.vol .img', {
-     duration: 1,
+     duration: 2,
      x: '100%',
      opacity: 0,
-     stagger: 0.3
 }, '0');
-
-
-// // Projects Title
-// gsap.from('.projects h2', {
-//      duration: 1,
-//      x: '-100%',
-//      opacity: 0,
-//      scrollTrigger: {
-//           trigger: '.project',
-//           toggleActions: 'restart none none reverse'
-//      },
-// });
-
-// // Project Animations
-// for (var i = 1; i<=numProjects; i++) {
-//      var t2 = gsap.timeline({
-//           scrollTrigger: {
-//                trigger: '.p'+i.toString(),
-//                // start: 'top 90%',
-//                // end: 'bottom 10%',
-//                toggleActions: 'restart none none reverse',
-//           }
-//      });
-
-//      t2.from('.p'+i.toString(), {
-//           duration: 1,
-//           opacity: 0,
-//      }, '0');
-
-//      t2.from('.p'+i.toString()+' .project-left', {
-//           duration: 1,
-//           opacity: 0,
-//           x: '-100%',
-//      }, '0');
-
-//      t2.from('.p'+i.toString()+' .project-right', {
-//           duration: 1,
-//           opacity: 0,
-//           x: '100%',
-//      }, '0');
-// }
