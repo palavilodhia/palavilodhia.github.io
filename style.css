@@ -29,7 +29,7 @@ body {
   width: 80%;
   margin-left: 80px;
   padding: 30px;
-  background-color: #425f75;
+  background-color: #395264;
   color: white;
   border-radius: 30px;
   border: 5px solid white;
@@ -56,7 +56,8 @@ body {
 }
 
 .experiences {
-  margin: 70px 150px;
+  padding: 50px 150px;
+  background-color: #425f75;
 }
 .experiences h2 {
   font-weight: 200;
@@ -128,136 +129,93 @@ body {
   line-height: 1.25rem;
 }
 
-.projects {
-  margin: 70px 100px;
+.labSection {
+  padding: 50px 150px;
 }
-.projects h2 {
+.labSection h2 {
   font-weight: 200;
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: 50px;
 }
-.projects .project {
+.labSection .labs {
   display: flex;
-  flex-direction: row;
-  max-width: 100%;
+}
+.labSection .labs .lab {
+  position: relative;
+  flex: 1 1 0;
   justify-content: space-between;
-  border-radius: 25px;
-  background-color: #1a3137;
-  padding: 25px;
-  margin: 40px 0;
 }
-.projects .project .project-left {
-  width: 50%;
-  padding: 0.5rem;
+.labSection .labs .lab .img {
+  margin: 0 auto;
+  position: relative;
+  width: 70%;
+  border: 5px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
 }
-@media (max-width: 992px) {
-  .projects .project .project-left {
-    width: 100%;
-  }
+.labSection .labs .lab .img img {
+  width: 100%;
 }
-@media (max-width: 610px) {
-  .projects .project .project-left {
-    padding-bottom: 0;
-  }
+.labSection .labs .lab .about {
+  position: relative;
+  top: -4%;
+  left: 5%;
+  width: 90%;
+  padding: 30px 15px 15px;
+  background-color: #bcafa5;
+  border: 5px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
 }
-.projects .project .project-left h3 {
+.labSection .labs .lab .about h3.experienceTitle {
   font-size: 28px;
-  font-weight: 200;
+  font-weight: 400;
   padding-bottom: 0.75rem;
   line-height: 2rem;
 }
-@media (max-width: 610px) {
-  .projects .project .project-left h3 {
-    font-size: 20px;
-    padding-bottom: 0.25rem;
-  }
-}
-.projects .project .project-left a.link {
-  display: inline-block;
-  text-decoration: none;
-  color: #6dabbb;
-  font-size: 16px;
-  margin: 0 20px 1rem 0;
-}
-@media (max-width: 610px) {
-  .projects .project .project-left a.link {
-    font-size: 14px;
-    margin: 0 20px 0.75rem 0;
-  }
-}
-.projects .project .project-left a.link:active {
-  color: white;
-}
-.projects .project .project-left ul li {
-  font-size: 14px;
-  margin-bottom: 0.5rem;
+.labSection .labs .lab .about h5.experienceDescription {
   line-height: 1.25rem;
 }
-@media (max-width: 610px) {
-  .projects .project .project-left ul li {
-    font-size: 12px;
-    line-height: 1rem;
-  }
+
+.volunteerSection {
+  background-color: #425f75;
+  padding: 50px 150px;
 }
-.projects .project .project-left a.hyperlink {
-  display: inline-block;
-  text-decoration: none;
-  color: #6dabbb;
+.volunteerSection h2 {
+  font-weight: 200;
+  font-size: 40px;
+  margin-bottom: 50px;
 }
-.projects .project .project-left .technologies {
-  margin-top: 1rem;
+.volunteerSection .vol {
+  position: relative;
 }
-.projects .project .project-left button {
-  background-color: white;
-  color: #264952;
-  text-decoration: none;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 5px;
-  margin-right: 5px;
-  padding: 2px 5px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
+.volunteerSection .vol .img {
+  position: relative;
+  left: 60%;
+  width: 40%;
+  border: 5px solid white;
 }
-@media (max-width: 610px) {
-  .projects .project .project-left button {
-    font-size: 12px;
-  }
-}
-.projects .project .project-left button:active {
-  background-color: white;
-  text-decoration: none;
-  border: none;
-  outline: none;
-}
-.projects .project .project-left button:focus {
-  text-decoration: none;
-  border: none;
-  outline: none;
-}
-.projects .project .project-right {
-  display: flex;
-  align-items: center;
-  width: 45%;
-  position: absolute;
-  left: 55%;
-}
-@media (max-width: 992px) {
-  .projects .project .project-right {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-}
-@media (max-width: 610px) {
-  .projects .project .project-right {
-    width: 100%;
-    margin-bottom: 0;
-  }
-}
-.projects .project .project-right img {
+.volunteerSection .vol .img img {
   width: 100%;
-  border-radius: 25px;
+}
+.volunteerSection .vol .about {
+  position: absolute;
+  width: 65%;
+  padding: 15px;
+  background-color: #bcafa5;
+  border: 5px solid white;
+  color: black;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.volunteerSection .vol .about h3.experienceTitle {
+  font-size: 28px;
+  font-weight: 400;
+  padding-bottom: 0.75rem;
+  line-height: 2rem;
+}
+.volunteerSection .vol .about h5.experienceDescription {
+  line-height: 1.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */
